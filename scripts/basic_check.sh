@@ -7,6 +7,7 @@ pushd $DIR/..
     # mkdir $GOPATH/src 
     echo "############1"
     echo $GOPATH
+    echo $WORKSPACE
     echo "############2"
     project_name=$(echo $GIT_URL | awk -F/ '{print $NF}' | sed 's/.git//g')
     echo ${project_name}
