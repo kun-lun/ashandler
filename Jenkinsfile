@@ -1,9 +1,11 @@
 pipeline {
     agent { docker { image 'golang:1.10.3' } }
     stages {
-        stage('prepare source') {
+        stage('install dependencies') {
             steps {
-                sh 'echo "hello"'
+                sh 'go get -u golang.org/x/lint/golint'
+                sh 'go get -u github.com/onsi/ginkgo/ginkgo'
+                sh 'go get -u github.com/onsi/gomega/...'
             }
         }
         stage('golint') {
