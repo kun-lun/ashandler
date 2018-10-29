@@ -11,7 +11,7 @@ pushd $DIR/..
     project_name=$(echo $GIT_URL | awk -F/ '{print $NF}' | sed 's/.git//g')
     echo ${project_name}
     echo "############3"
-    mkdir -p $GOPATH/src/github.com/xplaceholder/${project_name}
+    mkdir -p $GOPATH/src/github.com/xplaceholder
     # echo $GOPATH
     # /Users/andy/workspace/gopath
     # ln -f -s $WORKSPACE $GOPATH/src/$project_name
