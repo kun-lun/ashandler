@@ -24,7 +24,7 @@ pushd $DIR/..
     echo "##########5 $GOPATH/src/github.com/xplaceholder/${project_name}"
     echo "##########6"
     mkdir $GOPATH/src/github.com/xplaceholder/${project_name}
-    cp -r $WORKSPACE/ $GOPATH/src/github.com/xplaceholder/${project_name}/
+    cp -r $WORKSPACE/* $GOPATH/src/github.com/xplaceholder/${project_name}/
     # ln -f -s $WORKSPACE $GOPATH/src/github.com/xplaceholder/${project_name}
 
     ls $WORKSPACE
