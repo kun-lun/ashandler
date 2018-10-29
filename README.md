@@ -1,1 +1,1 @@
-[![Build Status](https://xplaceholderci.gugagaga.fun/buildStatus/icon?job=xplaceholder/ashandler/draft&build=1)]
+[![Build Status](https://xplaceholderci.gugagaga.fun/buildStatus/icon?job=xplaceholder/ashandler/draft&build=1)](https://xplaceholderci.gugagaga.fun/buildStatus/icon?job=xplaceholder/ashandler/draft&build=1)
