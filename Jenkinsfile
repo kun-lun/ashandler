@@ -10,7 +10,7 @@ pipeline {
         }
         stage('golint') {
             steps {
-                sh 'golint ./...'
+                sh 'golint `go list ./... | grep -v /vendor/`'
             }
         }
         stage('unit test') {
