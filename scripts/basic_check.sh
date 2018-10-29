@@ -22,7 +22,7 @@ pushd $DIR/..
     # 6XHK5ASSGWV2DTWF3TH3V7YNHGIZU2QEQ/src/github.com/xplaceholder/ashandler
     echo "##########5 $GOPATH/src/github.com/xplaceholder/${project_name}"
     echo "##########6"
-    ln -f -s $WORKSPACE/${project_name} $GOPATH/src/github.com/xplaceholder/${project_name}
+    ln -f -s $WORKSPACE $GOPATH/src/github.com/xplaceholder/${project_name}
 
     ls $WORKSPACE
     echo "##########7"
