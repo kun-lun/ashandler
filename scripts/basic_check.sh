@@ -22,7 +22,9 @@ pushd $DIR/..
     # 6XHK5ASSGWV2DTWF3TH3V7YNHGIZU2QEQ/src/github.com/xplaceholder/ashandler
     echo "##########5 $GOPATH/src/github.com/xplaceholder/${project_name}"
     echo "##########6"
-    ln -f -s $WORKSPACE $GOPATH/src/github.com/xplaceholder/${project_name}
+    mkdir $GOPATH/src/github.com/xplaceholder/${project_name}
+    cp -r $WORKSPACE $GOPATH/src/github.com/xplaceholder/${project_name}/
+    # ln -f -s $WORKSPACE $GOPATH/src/github.com/xplaceholder/${project_name}
 
     ls $WORKSPACE
     echo "##########7"
@@ -39,6 +41,6 @@ pushd $DIR/..
         echo "####xx"
         ls
         echo "####xx2"
-        ginkgo -r
+        ginkgo -race -r
     popd
 popd
