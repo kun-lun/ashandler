@@ -1,21 +1,12 @@
 pipeline {
     agent { docker { image 'golang:1.10.3' } }
+    environment {
+        GOPATH = "$WORKSPACE"
+    }
     stages {
-        stage('install dependencies') {
+        stage('basic test') {
             steps {
-                sh 'go get -u golang.org/x/lint/golint'
-                sh 'go get -u github.com/onsi/ginkgo/ginkgo'
-                sh 'go get -u github.com/onsi/gomega/...'
-            }
-        }
-        stage('golint') {
-            steps {
-                sh 'golint `go list ./... | grep -v /vendor/`'
-            }
-        }
-        stage('unit test') {
-            steps {
-                sh 'ginkgo -r'
+                sh "${env.WORKSPACE}/scripts/basic_check.sh"
             }
         }
     }

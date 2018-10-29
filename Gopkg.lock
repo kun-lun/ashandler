@@ -65,11 +65,15 @@
 
 [[projects]]
   branch = "draft"
-  digest = "1:adbd1d72af9ba3aa65661d765a1ad9a672ff2f859d325994c3f720cbad156171"
+  digest = "1:097f3355f8507062a9ffed6c0753296168025d8cbe089461b4a42535f63254d8"
   name = "github.com/xplaceholder/artifacts"
-  packages = ["pkg/models"]
+  packages = [
+    "pkg/api/basic",
+    "pkg/api/manifests",
+    "pkg/api/resources",
+  ]
   pruneopts = "UT"
-  revision = "b6b7d66748c53f863b10df286fbf07568c19db21"
+  revision = "19b03e902aa7ae5627a3f6b068e951715665663c"
 
 [[projects]]
   branch = "master"
@@ -146,7 +150,7 @@
   input-imports = [
     "github.com/onsi/ginkgo",
     "github.com/onsi/gomega",
-    "github.com/xplaceholder/artifacts/pkg/models",
+    "github.com/xplaceholder/artifacts/pkg/api/manifests",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

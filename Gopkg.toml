@@ -23,7 +23,9 @@
 #   non-go = false
 #   go-tests = true
 #   unused-packages = true
-
+required = [
+    "github.com/xplaceholder/artifacts/pkg/api/manifests"
+]
 
 [[constraint]]
   name = "github.com/onsi/ginkgo"
@@ -34,8 +36,8 @@
   version = "1.4.2"
 
 [[constraint]]
-  branch = "draft"
   name = "github.com/xplaceholder/artifacts"
+  branch = "draft"
 
 [prune]
   go-tests = true
