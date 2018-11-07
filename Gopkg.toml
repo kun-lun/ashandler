@@ -30,12 +30,24 @@
   name = "github.com/kun-lun/artifacts"
 
 [[constraint]]
+  branch = "draft"
+  name = "github.com/kun-lun/common"
+
+[[constraint]]
   name = "github.com/onsi/ginkgo"
   version = "1.6.0"
 
 [[constraint]]
   name = "github.com/onsi/gomega"
   version = "1.4.2"
+
+[[constraint]]
+  name = "github.com/spf13/afero"
+  version = "1.1.2"
+
+[[constraint]]
+  name = "gopkg.in/yaml.v2"
+  version = "2.2.1"
 
 [prune]
   go-tests = true
