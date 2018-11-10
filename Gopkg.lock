@@ -28,7 +28,15 @@
 
 [[projects]]
   branch = "draft"
-  digest = "1:b726eebaa81f759ea8b66dc110f2c705b2382f5b33c2caaaaea17093661f6015"
+  digest = "1:d1233f9dae58ac1aed31aa8f23acafb924e8015df930ce0318fdeafb3a68e6dd"
+  name = "github.com/kun-lun/built-in-roles"
+  packages = ["pkg/apis"]
+  pruneopts = "UT"
+  revision = "f3e843d3f75bc279ae0c69240be67fa075236d7f"
+
+[[projects]]
+  branch = "draft"
+  digest = "1:0ed8b498b3931ce0708629ef2e0566443838477783e4607dc691d6b46590da9f"
   name = "github.com/kun-lun/common"
   packages = [
     "fileio",
@@ -36,7 +44,7 @@
     "storage",
   ]
   pruneopts = "UT"
-  revision = "a5d5043fcc45fb30fa71a45c086fb5118a1b0cfe"
+  revision = "c7becf49e2c2f7fc21488276629fc93ea4f50108"
 
 [[projects]]
   branch = "master"
@@ -185,6 +193,8 @@
   input-imports = [
     "github.com/kun-lun/artifacts/pkg/apis",
     "github.com/kun-lun/artifacts/pkg/apis/deployments",
+    "github.com/kun-lun/built-in-roles/pkg/apis",
+    "github.com/kun-lun/common/fileio",
     "github.com/kun-lun/common/logger",
     "github.com/kun-lun/common/storage",
     "github.com/onsi/ginkgo",

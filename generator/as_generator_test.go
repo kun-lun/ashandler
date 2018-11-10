@@ -1,6 +1,7 @@
 package generator_test
 
 import (
+	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
@@ -32,10 +33,11 @@ var _ = Describe("AsGenerator", func() {
 		// Configuration
 		logger := clogger.NewLogger(os.Stdout, os.Stdin)
 		tempDir, err := ioutil.TempDir("", "")
+		fmt.Printf("root folder is %s\n", tempDir)
 		Expect(err).To(BeNil())
 		stateStore := storage.NewStore(tempDir, afs)
 
-		generator = NewASGenerator(stateStore, logger)
+		generator = NewASGenerator(stateStore, logger, afs)
 		hostGroupName := "fake_host_group"
 		hostGroups = []dep.HostGroup{
 			dep.HostGroup{
