@@ -128,7 +128,7 @@ func (a ASGenerator) generateHostsFile(hostGroups []deployments.HostGroup) []byt
 type AnsibleHost struct {
 	Host          string `yaml:"ansible_host"`
 	SSHUser       string `yaml:"ansible_ssh_user"`
-	SSHCommonArgs string `yaml:"ansible_ssh_common_args"`
+	SSHCommonArgs string `yaml:"ansible_ssh_common_args,omitempty"`
 }
 
 type role struct {
