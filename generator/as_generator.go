@@ -177,6 +177,23 @@ func (a ASGenerator) generatePlaybookFile(deployments []deployments.Deployment) 
 			Hosts:    dep.HostGroupName,
 			VarsFile: []string{varsFile},
 		}
+
+		roles := []role{}
+		for _, r := range dep.Roles {
+			if r.BecomeUser != "" {
+				roles = append(roles, role{
+					Role:       r.Name,
+					Become:     "true",
+					BecomeUser: r.BecomeUser,
+				})
+			} else {
+				roles = append(roles, role{
+					Role: r.Name,
+				})
+			}
+		}
+
+		depItem.Roles = roles
 		depItems = append(depItems, depItem)
 	}
 	content, _ := yaml.Marshal(depItems)
