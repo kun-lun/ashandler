@@ -32,19 +32,19 @@
     "pkg/apis/deployments",
   ]
   pruneopts = "UT"
-  revision = "69d9b2f24e664149115c90caf9da8a2f1d689739"
+  revision = "58f656608dad4fde33d45153e339aa6a23a70fe4"
 
 [[projects]]
   branch = "draft"
-  digest = "1:d1233f9dae58ac1aed31aa8f23acafb924e8015df930ce0318fdeafb3a68e6dd"
+  digest = "1:3b123175a03dc3a954cead7e62bda3db250d787b6c3eefbdf18042b4255d0d72"
   name = "github.com/kun-lun/built-in-roles"
   packages = ["pkg/apis"]
   pruneopts = "UT"
-  revision = "f3e843d3f75bc279ae0c69240be67fa075236d7f"
+  revision = "a804029985d0f76872066bd99778aecd24fcd648"
 
 [[projects]]
   branch = "draft"
-  digest = "1:d62a10d8009d017cc7f8b7905446207a96d039f0a2689baad237d160e9489766"
+  digest = "1:039af675df1ab89e47f35442d16ee26b30e4e7d0177c2a29c724f608679e312b"
   name = "github.com/kun-lun/common"
   packages = [
     "errors",
@@ -53,15 +53,15 @@
     "storage",
   ]
   pruneopts = "UT"
-  revision = "f7f052e28e81f919cca7eb1c3903f896bcc1d613"
+  revision = "11580d80d8ecaebf40fc4aee67d8f882ef7ed48b"
 
 [[projects]]
   branch = "draft"
-  digest = "1:daaafd2fe895b83b7124fa0a584fe88bba34f1221d6a2a96b7021b88d129666d"
+  digest = "1:7cb13041d1335e4567c88e520474d55bece8471a97c0c794e144ff27ce0f96e3"
   name = "github.com/kun-lun/patching"
   packages = ["pkg/apis"]
   pruneopts = "UT"
-  revision = "4655840a709c53b6dd44f0997561dc70098e88ae"
+  revision = "6b56a079f0ba701a52ba2f2df28b19daccb29833"
 
 [[projects]]
   branch = "master"
@@ -152,7 +152,7 @@
     "ssh",
   ]
   pruneopts = "UT"
-  revision = "e4dc69e5b2fd71dcaf8bd5d054eb936deb78d1fa"
+  revision = "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
 
 [[projects]]
   branch = "master"
